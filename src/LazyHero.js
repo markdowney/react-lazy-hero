@@ -37,7 +37,7 @@ const Overlay = styled(Cover)`
     justify-content: ${props => (props.isCentered ? 'center' : 'flex-start')};
     align-items: ${props => (props.isCentered ? 'center' : 'stretch')};
     text-align: ${props => (props.isCentered ? 'center' : 'left')};
-    background-color: ${props => Color(props.color).alpha(props.opacity).rgb().string()};
+    background-color: ${props => Color(props.color).alpha(props.opacity).rgb()};
 `;
 
 class LazyHero extends Component {
